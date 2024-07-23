@@ -72,6 +72,8 @@ body {
     position: relative;
     
     gap: 20px;
+
+    min-width: 200px;
 }
 
 /* Pseudo-classes - Hover effect on product button */
