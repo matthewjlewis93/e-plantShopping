@@ -12,6 +12,7 @@ function ProductList() {
     const [addedToCart, setAddedToCart] = useState({});
     
     const handleAddedToCart = (e,plant) => {
+        e.target.innerText = "Added to cart";
         e.target.disabled = true;
         setCartTotal(cartTotal+1)
         dispatch(addItem(plant))
