@@ -24,10 +24,10 @@ export const CartSlice = createSlice({
       if (itemToUpdate) {
         itemToUpdate.quantity = quantity;
       }
-    
+    },
     },
   },
-});
+);
 
 export const { addItem, removeItem, updateQuantity } = CartSlice.actions;
 
