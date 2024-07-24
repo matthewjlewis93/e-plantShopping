@@ -12,7 +12,7 @@ function ProductList() {
     const [addedToCart, setAddedToCart] = useState({});
     
     const handleAddedToCart = (e,plant) => {
-        e.target.disable()
+        e.target.disabled = true;
         setCartTotal(cartTotal+1)
         dispatch(addItem(plant))
         setAddedToCart((prevState) => ({
